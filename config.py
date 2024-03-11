@@ -23,3 +23,10 @@ class Databases(Enum):
     LOCAL = "my_database"
     PREPROD = "my_database_preprod"
     PROD = "my_database"
+
+
+class SaveMode(Enum):
+    """Write mode"""
+
+    OVERWRITE = "overwrite"
+    APPEND = "append"

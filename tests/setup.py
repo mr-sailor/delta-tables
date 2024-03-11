@@ -40,9 +40,9 @@ def setup_hive(spark: SparkSession = None):
             logger.info(f"Created hive table: {db}.{table_name}")
 
 
-def drop_tables():
+def drop_all_tables():
     """
-    Dropping all or particular hive table(s) metadata.
+    Dropping all hive tables and metadata.
     """
     drop_dir = HIVE_PATH
 
